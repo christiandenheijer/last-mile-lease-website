@@ -34,14 +34,16 @@ export const brands = [
   {
     name: "Urban Arrow",
     description: "Marktleider in elektrische cargobikes voor zakelijk gebruik.",
+    logo: "/brand/partners/urban-arrow.png",
+    logoWidth: 174,
+    logoHeight: 22,
   },
   {
     name: "VOK Bikes",
     description: "Robuuste cargobikes, gebouwd voor intensief dagelijks gebruik.",
-  },
-  {
-    name: "Fulpra",
-    description: "Innovatieve cargobike-oplossingen voor stedelijke logistiek.",
+    logo: "/brand/partners/vok-bikes.svg",
+    logoWidth: 40,
+    logoHeight: 16,
   },
 ] as const;
 
@@ -255,7 +257,7 @@ export const steps = [
     number: "02",
     title: "Kies de juiste cargobike",
     description:
-      "Samen kiezen we het model van Urban Arrow, VOK of Fulpra dat bij jouw werk past.",
+      "Samen kiezen we het model van Urban Arrow of VOK Bikes dat bij jouw werk past.",
   },
   {
     number: "03",
@@ -290,7 +292,7 @@ export const faqs = [
   {
     question: "Welke merken cargobikes leveren jullie?",
     answer:
-      "Wij leveren professionele elektrische cargobikes van onder andere Urban Arrow, VOK Bikes en Fulpra. Op basis van jouw wensen en toepassing adviseren we welk model het beste past.",
+      "Wij leveren professionele elektrische cargobikes van Urban Arrow en VOK Bikes. Op basis van jouw wensen en toepassing adviseren we welk model het beste past.",
   },
   {
     question: "Kan ik meerdere cargobikes leasen voor mijn organisatie?",

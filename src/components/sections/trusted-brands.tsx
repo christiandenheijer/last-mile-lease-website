@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { brands } from "@/lib/site";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/shared/reveal";
@@ -12,16 +13,21 @@ export function TrustedBrands() {
             kwaliteit
           </p>
         </Reveal>
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2">
           {brands.map((brand, i) => (
             <Reveal key={brand.name} delay={i * 0.08}>
-              <div className="flex h-full flex-col items-center rounded-2xl border border-navy-100 bg-mist-50 px-6 py-8 text-center transition-colors hover:border-green-300 hover:bg-green-50/40">
-                <span className="font-display text-2xl font-semibold text-navy-800">
+              <div className="flex h-full flex-col items-center gap-4 rounded-2xl border border-navy-100 bg-mist-50 px-6 py-8 text-center transition-colors hover:border-green-300 hover:bg-green-50/40">
+                <Image
+                  src={brand.logo}
+                  alt={brand.name}
+                  width={brand.logoWidth}
+                  height={brand.logoHeight}
+                  className="h-8 w-auto object-contain"
+                />
+                <span className="font-display text-lg font-semibold text-navy-800">
                   {brand.name}
                 </span>
-                <p className="mt-2 text-sm text-navy-600/80">
-                  {brand.description}
-                </p>
+                <p className="text-sm text-navy-600/80">{brand.description}</p>
               </div>
             </Reveal>
           ))}

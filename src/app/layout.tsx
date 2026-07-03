@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "Urban Arrow lease",
     "Urban Arrow zakelijk",
     "VOK lease",
-    "Fulpra lease",
+    "VOK Bikes zakelijk",
     "operational lease cargobike",
     "financial lease cargobike",
     "emissievrije logistiek",

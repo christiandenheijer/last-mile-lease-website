@@ -1,6 +1,6 @@
 # Last Mile Lease — website
 
-Premium, SEO-geoptimaliseerde marketingwebsite voor **Last Mile Lease**, specialist in zakelijke leaseoplossingen voor professionele elektrische cargobikes (Urban Arrow, VOK Bikes, Fulpra). De site is gebouwd voor leadgeneratie: offerteaanvragen en adviesgesprekken.
+Premium, SEO-geoptimaliseerde marketingwebsite voor **Last Mile Lease**, specialist in zakelijke leaseoplossingen voor professionele elektrische cargobikes (Urban Arrow, VOK Bikes). De site is gebouwd voor leadgeneratie: offerteaanvragen en adviesgesprekken.
 
 ## Tech stack
 
@@ -98,7 +98,8 @@ Pas `siteConfig.url` in `src/lib/site.ts` aan naar het definitieve domein voorda
 ## Fotografie & assets
 
 - Het logo (`public/brand/logo-dark.png` en `logo-light.png`) is afgeleid van de aangeleverde huisstijl.
-- De fotografie in `public/images/` bestaat uit royalty-free stockfoto's (Unsplash License, vrij voor commercieel gebruik). Vervang deze door eigen productfotografie van de cargobikes zodra beschikbaar voor het beste resultaat.
+- De fotografie in `public/images/` is eigen productfotografie (Urban Arrow en VOK Bikes cargobikes in het echt in gebruik).
+- Partnerlogo's staan in `public/brand/partners/` (`urban-arrow.png`, `vok-bikes.svg`), gebruikt in de "vertrouwde merken"-sectie op de homepage.
 
 ## Deployment
 
