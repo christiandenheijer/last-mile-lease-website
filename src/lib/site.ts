@@ -4,13 +4,13 @@ export const siteConfig = {
   description:
     "Last Mile Lease is specialist in zakelijke leaseoplossingen voor professionele elektrische cargobikes. Operational en Financial Lease, inclusief onderhoud, verzekering en service.",
   url: "https://www.lastmilelease.nl",
-  phone: "+31 85 000 0000",
-  phoneDisplay: "085 - 000 00 00",
+  phone: "+31 85 90 22 111",
+  phoneDisplay: "085 - 90 22 111",
   email: "info@lastmilelease.nl",
   address: {
-    street: "Kabelweg 21",
-    postalCode: "1014 BA",
-    city: "Amsterdam",
+    street: "Grote Esch 1001",
+    postalCode: "2841 MJ",
+    city: "Moordrecht",
     country: "NL",
   },
   social: {
