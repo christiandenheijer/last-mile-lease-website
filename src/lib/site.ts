@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "Last Mile Lease",
+  name: "Last Mile lease",
   tagline: "Urban mobility",
   description:
-    "Last Mile Lease is specialist in zakelijke leaseoplossingen voor professionele elektrische cargobikes. Operational en Financial Lease, inclusief onderhoud, verzekering en service.",
+    "Last Mile Lease is specialist in zakelijke leaseoplossingen voor professionele elektrische cargobikes. Operational en financial lease, inclusief onderhoud, verzekering en service.",
   url: "https://www.lastmilelease.nl",
   phone: "+31 85 90 22 111",
   phoneDisplay: "085 - 90 22 111",
@@ -23,8 +23,8 @@ export const siteConfig = {
 
 export const navigation = [
   { label: "Home", href: "/" },
-  { label: "Operational Lease", href: "/operational-lease" },
-  { label: "Financial Lease", href: "/financial-lease" },
+  { label: "Operational lease", href: "/operational-lease" },
+  { label: "Financial lease", href: "/financial-lease" },
   { label: "Sectoren", href: "/sectoren" },
   { label: "Over ons", href: "/over-ons" },
   { label: "Contact", href: "/contact" },
@@ -47,7 +47,7 @@ export const brands = [
 
 export const usps = [
   {
-    title: "Operational én Financial Lease",
+    title: "Operational én financial lease",
     description:
       "Kies de leasevorm die past bij jouw organisatie: volledige ontzorging of eigendom na afloop.",
     icon: "Layers",
@@ -126,7 +126,7 @@ export const challenges = [
 export const leaseSolutions = [
   {
     key: "operational",
-    title: "Operational Lease",
+    title: "Operational lease",
     href: "/operational-lease",
     description:
       "Volledig zorgeloos rijden tegen een vast, voorspelbaar maandbedrag.",
@@ -139,7 +139,7 @@ export const leaseSolutions = [
   },
   {
     key: "financial",
-    title: "Financial Lease",
+    title: "Financial lease",
     href: "/financial-lease",
     description:
       "Bouw aan eigendom met fiscaal aantrekkelijke, flexibele voorwaarden.",
@@ -273,19 +273,19 @@ export const steps = [
 
 export const faqs = [
   {
-    question: "Wat is het verschil tussen Operational en Financial Lease?",
+    question: "Wat is het verschil tussen operational en financial lease?",
     answer:
-      "Bij Operational Lease betaal je een vast maandbedrag waarin onderhoud en verzekering zijn inbegrepen, en lever je de cargobike aan het einde van de looptijd weer in. Bij Financial Lease bouw je toe naar eigendom van de cargobike en profiteer je mogelijk van fiscale voordelen, tegen een lager maandbedrag zonder onderhoud en verzekering inbegrepen.",
+      "Bij operational lease betaal je een vast maandbedrag waarin onderhoud en verzekering zijn inbegrepen, en lever je de cargobike aan het einde van de looptijd weer in. Bij financial lease bouw je toe naar eigendom van de cargobike en profiteer je mogelijk van fiscale voordelen, tegen een lager maandbedrag zonder onderhoud en verzekering inbegrepen.",
   },
   {
     question: "Zit onderhoud inbegrepen bij mijn lease?",
     answer:
-      "Bij Operational Lease is onderhoud standaard inbegrepen, inclusief onderhoud op locatie zodat jouw cargobikes altijd inzetbaar blijven. Bij Financial Lease kun je onderhoud optioneel toevoegen aan jouw contract.",
+      "Bij operational lease is onderhoud standaard inbegrepen, inclusief onderhoud op locatie zodat jouw cargobikes altijd inzetbaar blijven. Bij financial lease kun je onderhoud optioneel toevoegen aan jouw contract.",
   },
   {
     question: "Is verzekering inbegrepen?",
     answer:
-      "Ja, bij Operational Lease is een volledige verzekering tegen schade en diefstal inbegrepen. Bij Financial Lease adviseren we je graag over de juiste verzekeringsopties voor jouw situatie.",
+      "Ja, bij operational lease is een volledige verzekering tegen schade en diefstal inbegrepen. Bij financial lease adviseren we je graag over de juiste verzekeringsopties voor jouw situatie.",
   },
   {
     question: "Welke merken cargobikes leveren jullie?",
