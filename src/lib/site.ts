@@ -18,7 +18,7 @@ export const siteConfig = {
   },
   formEndpoint:
     process.env.NEXT_PUBLIC_FORM_ENDPOINT ??
-    "https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID",
+    "https://hook.eu1.make.com/tbwclvk2jr16xrhx2c0iqtwt86rszfpd",
 };
 
 export const navigation = [

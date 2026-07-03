@@ -63,18 +63,21 @@ De site draait vervolgens op [http://localhost:3000](http://localhost:3000).
 
 ## Leadformulier configureren
 
-Het contactformulier (`/contact`) post naar een extern formulier-endpoint, zodat de site volledig statisch te hosten blijft zonder eigen backend.
+Het contactformulier (`/contact`) post de aanvraag als JSON naar een webhook, zodat er geen eigen backend nodig is.
 
-1. Maak een gratis formulier aan bij [Formspree](https://formspree.io) of [Web3Forms](https://web3forms.com).
-2. Zet de endpoint-URL in `.env.local`:
+Standaard staat er een **Make.com (Integromat) custom webhook** geconfigureerd (scenario "Last Mile Lease - Contactformulier", map "Leadgeneratie"). Verwerking (bijv. doorzetten naar e-mail, CRM of Slack) bouw je verder uit in dat scenario in Make.
+
+Wil je een ander endpoint gebruiken (eigen Make-scenario, Zapier, n8n, of een eigen backend)?
+
+1. Zet de endpoint-URL in `.env.local`:
 
    ```
-   NEXT_PUBLIC_FORM_ENDPOINT=https://formspree.io/f/jouw-form-id
+   NEXT_PUBLIC_FORM_ENDPOINT=https://hook.eu1.make.com/jouw-webhook-id
    ```
 
-3. Herstart de dev server. Zonder deze variabele valt de site terug op een placeholder-URL en zal versturen mislukken.
+2. Herstart de dev server. Zonder deze variabele valt de site terug op de standaard-webhook hierboven.
 
-Het formulier bevat client- en schema-validatie (React Hook Form + Zod) en een verborgen honeypot-veld tegen spam.
+Het endpoint ontvangt een POST-request met `Content-Type: application/json` en de velden `name`, `company`, `email`, `phone`, `bikeCount`, `organizationType`, `message`. Het formulier bevat client- en schema-validatie (React Hook Form + Zod) en een verborgen honeypot-veld (`website`) tegen spam — bots die dit veld invullen worden clientside al geblokkeerd, dus het veld hoeft niet apart afgehandeld te worden in het webhook-scenario.
 
 ## Content aanpassen
 
