@@ -114,6 +114,29 @@ npm run build
 npm run start
 ```
 
+### Plesk (VPS met Node.js-extensie)
+
+Een `git pull` via Plesk's Git-integratie haalt alleen de broncode binnen — het bouwt en start de app niet. Volg deze stappen om de site als Node.js-app te draaien:
+
+1. **Websites & Domains → jouw domein → Node.js** → zet Node.js op **aan**.
+   - **Node.js-versie**: 20 LTS (of hoger).
+   - **Document root**: de map waar de repository naartoe gepubliceerd is (bijv. `httpdocs`).
+   - **Application root**: zelfde map als document root, tenzij je in een submap publiceert.
+   - **Application startup file**: `server.js` (zit in de repository — dit is een minimale custom server die `next()` in productiemodus start en luistert op de poort die Plesk/Passenger via `process.env.PORT` doorgeeft).
+2. Zet onder **Environment variables**: `NEXT_PUBLIC_FORM_ENDPOINT` (en eventueel `NODE_ENV=production`).
+3. Klik op **NPM install**.
+4. Bouw de productieversie. Plesk heeft hiervoor meestal een **"Run script"**-knop (kies `build`); heeft jouw Plesk-versie die niet, log dan in via SSH en run:
+   ```bash
+   cd ~/httpdocs   # of jouw document root
+   npm run build
+   ```
+   Dit genereert de `.next`-map die `server.js` nodig heeft (deze map wordt bewust niet meegecommit naar Git).
+5. Klik op **Restart App**.
+
+**Bij elke nieuwe `git pull`** moet je stap 3–5 herhalen, anders draait de site nog op de oude build. Wil je dit automatiseren: open de **Git**-instellingen van het domein in Plesk en zet onder **"Additional deploy actions"** een script dat na elke pull `npm install && npm run build` uitvoert, gevolgd door een app-restart (bijv. via `touch tmp/restart.txt` als jouw Passenger-versie dat ondersteunt, of de Plesk CLI).
+
+Zie je na het volgen van deze stappen nog steeds de standaard Linux-testpagina, controleer dan of het domein daadwerkelijk op "Node.js-app" staat ingesteld (en niet op "Static/PHP-website") en of de Application startup file exact `server.js` is.
+
 ## Licentie
 
 De broncode van dit project is beschikbaar onder de [MIT-licentie](LICENSE). Aangeleverde huisstijl-assets (logo) en fotografie vallen buiten deze licentie en blijven eigendom van de respectievelijke rechthebbenden.
