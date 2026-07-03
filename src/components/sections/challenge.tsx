@@ -41,7 +41,7 @@ export function Challenge() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-4xl shadow-lift">
               <Image
                 src="/images/urban-traffic.jpg"
-                alt="Drukke binnenstad met verkeer, waar bestelwagens moeite hebben zich te verplaatsen"
+                alt="Servicemonteur op een elektrische Urban Arrow cargobike voor BMN bij stedelijke werkzaamheden"
                 fill
                 sizes="(min-width: 1024px) 40vw, 90vw"
                 className="object-cover"

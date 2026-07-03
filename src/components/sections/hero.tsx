@@ -74,7 +74,7 @@ export function Hero() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-4xl shadow-lift sm:aspect-[5/6] lg:aspect-[4/5]">
             <Image
               src="/images/hero-cargo-bike-city.jpg"
-              alt="Professionele elektrische cargobike met bezorger in een Europese binnenstad"
+              alt="Bezorger op een elektrische Urban Arrow cargobike voor Bever Bezorgt in de binnenstad"
               fill
               priority
               sizes="(min-width: 1024px) 40vw, 90vw"

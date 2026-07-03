@@ -63,7 +63,7 @@ export default function OverOnsPage() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-4xl shadow-lift">
                 <Image
                   src="/images/over-ons-team.jpg"
-                  alt="Het team van Last Mile Lease in overleg"
+                  alt="Vloot elektrische VOK Bikes cargobikes met verschillende opbouwvarianten"
                   fill
                   sizes="(min-width: 1024px) 40vw, 90vw"
                   className="object-cover"
