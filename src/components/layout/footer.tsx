@@ -109,7 +109,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {siteConfig.name}. Alle rechten
             voorbehouden.
           </p>
-          <p>KvK 00000000 · BTW NL000000000B00</p>
+          <p>KvK 94006970 · BTW NL866601077B01</p>
         </div>
       </Container>
     </footer>
